@@ -5,13 +5,9 @@ import smtplib
 # Path must be like: "/Users/xfarooqi/Desktop/100Days/Day5/Day6/coree.csv"
 df =pd.read_csv("Path of File/coree.csv", index_col = False)
 
-name_col = df["Full Name"]  #Renmae it to names and delete the Column Below
+names = df["Full Name"]  
 
-names = name_col.iloc[0:1]
-print(names)
-email_col = df["Email"]
-emails = email_col.iloc[0:1]
-print(emails)
+emails = df["Email"]
 
 
 server = smtplib.SMTP("smtp.gmail.com", 587)
@@ -19,7 +15,7 @@ server.starttls()
 # Setting the Login Access
 server.login("Enter You Email", "Enter App Password")
 
-import smtplib
+
 
 # Email Generation
 for name in names:
