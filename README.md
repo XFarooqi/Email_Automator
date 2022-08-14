@@ -56,7 +56,7 @@ If you want an easy interface, then Juypter Notebook is for you. All you need to
 
 1. Open Goolge Collab (https://colab.research.google.com/)
 
-2. Select GitHub on 
+2. Select GitHub
 
 3. Paste the Link of this repository
 
